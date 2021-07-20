@@ -13,7 +13,7 @@ def bot():
         msg.body(result)
         responded = True
     if "unews" in incoming_msg or "un" in incoming_msg:
-        r = requests.get("http://newsapi.org/v2/top-headlines?country=us&apiKey=d4de648fb6424879b36e8ff41c9aa5f1")
+        r = requests.get("http://newsapi.org/v2/top-headlines?country=us&apiKey= enter ur api-key")
         if r.status_code == 200:
           data = r.json()
           for i in data["articles"]:
@@ -26,7 +26,7 @@ def bot():
         responded = True
 
     if "inews" in incoming_msg or "in" in incoming_msg:
-        r = requests.get("http://newsapi.org/v2/top-headlines?country=in&apiKey=d4de648fb6424879b36e8ff41c9aa5f1")
+        r = requests.get("http://newsapi.org/v2/top-headlines?country=in&apiKey= enter ur api key here")
         if r.status_code == 200:
             data = r.json()
             for i in data["articles"]:
@@ -37,7 +37,7 @@ def bot():
         msg.body(tex)
         responded = True
     if "bbc" in incoming_msg or "bb" in incoming_msg:
-        r = requests.get("https://newsapi.org/v1/articles?source=bbc-news&apiKey=d4de648fb6424879b36e8ff41c9aa5f1")
+        r = requests.get("https://newsapi.org/v1/articles?source=bbc-news&apiKey= enter ur api key here")
         if r.status_code == 200:
             data = r.json()
             for i in data["articles"]:
@@ -49,7 +49,7 @@ def bot():
         responded = True
 
     if "insc" in incoming_msg or "ins" in incoming_msg:
-        r = requests.get("http://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=d4de648fb6424879b36e8ff41c9aa5f1")
+        r = requests.get("http://newsapi.org/v2/top-headlines?country=in&category=science&apiKey= enter ur api key here")
         if r.status_code == 200:
             data = r.json()
             for i in data["articles"]:
@@ -61,7 +61,7 @@ def bot():
             responded = True
 
     if "usc" in incoming_msg or "us" in incoming_msg:
-        r = requests.get("http://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=d4de648fb6424879b36e8ff41c9aa5f1")
+        r = requests.get("http://newsapi.org/v2/top-headlines?country=us&category=science&apiKey= enter ur api key here")
         if r.status_code == 200:
             data = r.json()
             for i in data["articles"]:
@@ -73,7 +73,7 @@ def bot():
             responded = True
 
     if "it" in incoming_msg:
-        r = requests.get("http://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=d4de648fb6424879b36e8ff41c9aa5f1")
+        r = requests.get("http://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey= enter ur api key here")
         if r.status_code == 200:
             data = r.json()
             for i in data["articles"]:
@@ -84,7 +84,7 @@ def bot():
             msg.body(tex)
             responded = True
     if "ut" in incoming_msg:
-        r = requests.get("http://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=d4de648fb6424879b36e8ff41c9aa5f1")
+        r = requests.get("http://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey= enter ur api key here")
         if r.status_code == 200:
             data = r.json()
             for i in data["articles"]:
